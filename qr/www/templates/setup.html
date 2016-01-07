@@ -1,0 +1,29 @@
+<ion-view view-title="Setup">
+    <div class="bar bar-header bar-positive">
+        <a href="#/main"><button class="button button-icon icon ion-ios-home"></button></a>
+        <h1 class="title">My Key Management</h1>
+    </div>
+    <ion-content class=" has-header padding topper">
+
+                <div class="text-center padding">
+                    <h3>Add a description and password.</h3>
+                </div>
+
+                <div class="text-center padding">
+                    <label class="item item-input padding">
+                        <span class="input-label">Description</span>
+                        <input type="text" ng-model="info.description">
+                    </label>
+                    <br>
+                    <label class="item item-input padding">
+                        <span class="input-label">Password</span>
+                        <input type="text" ng-model="info.password" autocapitalize="off">
+                    </label>
+                    <br>
+                    <button class="button button-full button-positive" ng-click="set(info)">Set Up</button>
+                </div>
+  </ion-content>
+  <div class="bar bar-footer bar-positive">
+
+  </div>
+</ion-view>
